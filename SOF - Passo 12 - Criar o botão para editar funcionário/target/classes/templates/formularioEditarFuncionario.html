@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Ediçãoo de Funcionário</title>
+	</head>
+	
+	
+	<body>
+	
+		<h1>Editar o funcionário</h1>
+	
+
+        <form action="#" th:action="@{/adicionarFuncionario}" th:object="${funcionario}" method="post">
+ 
+ 
+            <table border="0" cellpadding="10">
+            
+            
+                <tr>
+                    <td>Número de registro:</td>
+                    <td><input type="text" th:field="*{id}" readonly="readonly"/></td>
+                </tr>
+                            
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" th:field="*{nome}" placeholder="Digite o nome"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Idade:</td>
+                    <td><input type="number" th:field="*{idade}" min="18" max="100"/></td>
+                </tr>
+   
+ 
+                <tr>
+                    <td>Salário:</td>
+                    <td><input type="number" th:field="*{salario}" step="100.00" max="90000"/></td>
+                </tr>
+                
+                 <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" th:field="*{email}" placeholder="Digite o e-mail"/></td>
+                </tr>
+                                                                   
+                <tr>
+                    <td colspan="2">
+                    	<button type="submit">Salvar</button>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </form>	
+
+	
+	</body>
+	
+	
+</html>
