@@ -1,0 +1,7 @@
+com\upperdev\sof\service\FuncionarioService.class
+com\upperdev\sof\entity\Funcionario.class
+com\upperdev\sof\SofApplication.class
+com\upperdev\sof\repository\FuncionarioRepository.class
+com\upperdev\sof\swagger\SwaggerConfig.class
+com\upperdev\sof\controller\api\FuncionarioControllerApi.class
+com\upperdev\sof\controller\FuncionarioController.class
